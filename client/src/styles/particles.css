@@ -1,0 +1,22 @@
+.particles {
+  position: relative;
+  overflow: hidden;
+}
+
+.particles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+  animation: particles-move 20s linear infinite;
+}
+
+@keyframes particles-move {
+  0% { background-position: 0 0; }
+  100% { background-position: 40px 40px; }
+}
